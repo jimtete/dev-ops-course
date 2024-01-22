@@ -89,6 +89,95 @@
           "Microsoft.AspNetCore.App"
         ]
       }
+    },
+    "net6.0/linux-x64": {
+      "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        }
+      },
+      "Microsoft.OpenApi/1.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0"
+        },
+        "build": {
+          "build/Swashbuckle.AspNetCore.props": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.2.3"
+        },
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0"
+        },
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/6.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
     }
   },
   "libraries": {
@@ -488,6 +577,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.linux-x64",
+            "version": "[6.0.26, 6.0.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -497,6 +600,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.126/RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "linux-x64": {
+        "#import": []
       }
     }
   }

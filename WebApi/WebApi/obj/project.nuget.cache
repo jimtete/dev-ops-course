@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ncjGg8fjPGez1VRlC6lpc1BZZjzA++HLs8ogVq0RQujMKT4vUTgtNr/MrJJl8AurKIQg3CJfcoIqJcpsC6zvGg==",
+  "dgSpecHash": "oDncCgfk6Hc1AqD48RYz4uJ0r21PcIRJ0MVBc2fhkE6C3GQ3bq2Pjb+wY91QK1rku7pbH5bzPUkOK5MsCBWptQ==",
   "success": true,
   "projectFilePath": "/home/jimtete/GitHub/dev-ops-course/WebApi/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,10 @@
     "/home/jimtete/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/home/jimtete/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/home/jimtete/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/home/jimtete/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "/home/jimtete/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "/home/jimtete/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/6.0.26/microsoft.netcore.app.runtime.linux-x64.6.0.26.nupkg.sha512",
+    "/home/jimtete/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/6.0.26/microsoft.aspnetcore.app.runtime.linux-x64.6.0.26.nupkg.sha512",
+    "/home/jimtete/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.26/microsoft.netcore.app.host.linux-x64.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }

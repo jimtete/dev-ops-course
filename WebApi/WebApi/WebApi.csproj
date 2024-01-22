@@ -7,6 +7,13 @@
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <ContainerImageName>web-api-dev-ops</ContainerImageName>
+        <ContainerImageTags>latest</ContainerImageTags>
+        <PublishProfile>DefaultContainer</PublishProfile>
+        <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    </PropertyGroup>
+
     <ItemGroup>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     </ItemGroup>
